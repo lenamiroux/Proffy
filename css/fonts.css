@@ -1,1 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&family=Poppins:wght@400;600&display=swap');
+
+:root {
+  /* tamamho da fonte padrão: 16px - 100% - 1rem */
+  font-size: 60%; /* controle das medidas rem */
+}

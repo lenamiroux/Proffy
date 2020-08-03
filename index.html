@@ -1,14 +1,49 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/colors.css" />
     <link rel="stylesheet" href="./css/fonts.css" />
+    <link rel="stylesheet" href="./css/style.css" />
 
-    <title>Proffy</title>
+    <title>Proffy | Sua plataforma de estudos online</title>
   </head>
-  <body>
-    <h1>Proffy</h1>
+  <body id="page_landing">
+   
+    <div id="container">
+
+      <section id="intro">
+        <div id="intro_image">
+          <img src="./img/landing.svg" alt="Proffy" />
+        </div>
+        <div id="intro_title">
+          <a href="#"><img src="./img/logo.svg" alt="Logo Proffy" id="logo"></a>
+          <h1>Proffy</h1>
+          <h2>Sua plataforma de</br> estudos online.</h2>
+        </div>
+        
+      </section>
+      
+      <section id="info">
+        <div id="info_buttons">
+          <button>
+            <span><img src="./img/icons/study.svg" alt="Estudar"></span>
+            Estudar
+          </button>
+          <button>
+            <span><img src="./img/icons/give-classes.svg" alt="Dar Aulas"></span>
+            Dar Aulas
+          </button>
+        </div>
+        <div id="info_stats">
+          <p>Total de <span id="stats_number">285</span> conexões realizadas <span><img src="./img/icons/purple-heart.svg" alt="heart"></span></p>
+        </div>
+      </section>
+
+    </div>
+
+    <script src="./js/script.js"></script>
   </body>
 </html>
