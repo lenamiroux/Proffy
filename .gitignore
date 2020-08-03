@@ -1,0 +1,14 @@
+# MacOS Files
+.DS-Store
+
+# Folders
+0_docs/
+1_files/
+
+# File Types
+*.code-workspace
+*.log
+*.log*
+
+# Modules
+node_modules/
