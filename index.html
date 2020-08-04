@@ -3,46 +3,43 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/reset.css" />
-    <link rel="stylesheet" href="./css/colors.css" />
-    <link rel="stylesheet" href="./css/fonts.css" />
-    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./styles/reset.css" />
+    <link rel="stylesheet" href="./styles/colors.css" />
+    <link rel="stylesheet" href="./styles/fonts.css" />
+    <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="stylesheet" href="./styles/partials/page-landing.css" />
 
     <title>Proffy | Sua plataforma de estudos online</title>
   </head>
-  <body id="page_landing">
+  <body id="page-landing">
     <div id="container">
-      <div id="intro">
-        <div id="intro_title">
-          <img src="./img/logo.svg" alt="Logo Proffy" id="logo" />
-          <h1>Proffy</h1>
-          <h2>Sua plataforma de estudos online.</h2>
-        </div>
-        <div id="intro_image">
-          <img src="./img/landing.svg" alt="Proffy" />
-        </div>
+      <div class="logo-container">
+        <img src="./img/logo.svg" alt="Logo Proffy" id="logo" />
+        <h2>Sua plataforma de estudos online.</h2>
       </div>
 
-      <div id="info">
-        <div id="info_buttons">
-          <button>
-            <span><img src="./img/icons/study.svg" alt="Estudar" /></span>
-            Estudar
-          </button>
-          <button>
-            <span
-              ><img src="./img/icons/give-classes.svg" alt="Dar Aulas"
-            /></span>
-            Dar Aulas
-          </button>
-        </div>
-        <div id="info_stats">
-          <p>
-            Total de <span id="stats_number">285</span> conexões realizadas
-            <span><img src="./img/icons/purple-heart.svg" alt="heart" /></span>
-          </p>
-        </div>
+      <img
+        class="hero-image"
+        src="./img/landing.svg"
+        alt="Plataforma de Estudos"
+      />
+
+      <div class="buttons-container">
+        <a class="study" href="./study.html">
+          <img src="./img/icons/study.svg" alt="Estudar" />
+          Estudar
+        </a>
+
+        <a class="give-classes" href="./give-classes.html">
+          <img src="./img/icons/give-classes.svg" alt="Dar Aulas" />
+          Dar Aulas
+        </a>
       </div>
+
+      <p class="total-connections">
+        Total de 285 conexões realizadas
+        <span><img src="./img/icons/purple-heart.svg" alt="Coração" /></span>
+      </p>
     </div>
 
     <script src="./js/script.js"></script>
