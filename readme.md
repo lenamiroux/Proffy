@@ -9,7 +9,7 @@
   </a>
 </p>
 
-> Web Plataform to connect students and teachers. Made in the Next Level Week #2 @Rocketseat
+> Web Platform to connect students and teachers. Made in the Next Level Week #2 @Rocketseat
 
 ## Author
 
