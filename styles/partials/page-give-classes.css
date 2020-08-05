@@ -21,7 +21,7 @@
   padding: 0 2.4rem;
 }
 
-#page-give-classes legend {
+#page-give-classes fieldset legend {
   font: 700 2.4rem Archivo;
   color: var(--color-text-title);
   margin-bottom: 2.4rem;

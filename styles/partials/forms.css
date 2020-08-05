@@ -41,6 +41,11 @@
   bottom: 0;
 }
 
+.textarea-block:focus-within::after {
+  content: '';
+  bottom: 0.7rem;
+}
+
 footer button {
   height: 5.6rem;
   background: var(--color-secondary);
