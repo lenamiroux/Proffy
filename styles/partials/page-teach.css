@@ -128,7 +128,8 @@ form button:hover {
 }
 
 .select-block select,
-.input-block input {
+.input-block input,
+textarea {
   width: 100%;
   height: 5.6rem;
   margin-top: 0.8rem;
@@ -138,6 +139,11 @@ form button:hover {
   outline: 0;
   padding: 0 1.6rem;
   font: 1.6rem Archivo;
+}
+
+.input-block textarea {
+  height: 150px;
+  resize: none;
 }
 
 .input-block {
@@ -246,7 +252,10 @@ form button:hover {
     margin-top: -67px;
     margin-left: 500px;
   }
-
+  .form-container {
+    max-width: 740px;
+    margin: -64px auto 80px auto;
+  }
   .form-container footer {
     display: flex;
     flex-direction: row;
