@@ -58,7 +58,7 @@
   transition: 0.2;
 }
 
-#page-give-classes fieldset legend button:hover {
+.schedule-items-title button:hover {
   transform: translateY(-5px);
   color: var(--color-primary-dark);
 }
