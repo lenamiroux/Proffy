@@ -7,97 +7,82 @@
     <link rel="stylesheet" href="./styles/colors.css" />
     <link rel="stylesheet" href="./styles/fonts.css" />
     <link rel="stylesheet" href="./styles/main.css" />
-    <link rel="stylesheet" href="./styles/partials/page-teach.css" />
+    <link rel="stylesheet" href="./styles/partials/header.css" />
+    <link rel="stylesheet" href="./styles/partials/forms.css" />
+    <link rel="stylesheet" href="./styles/partials/page-give-classes.css" />
 
     <title>Proffy | Sua plataforma de estudos online</title>
   </head>
-  <body id="page-teach">
+  <body id="page-give-classes">
     <div id="container">
       <header class="page-header">
         <div class="top-bar-container">
           <a href="/">
             <img src="./img/icons/back.svg" alt="Voltar" />
           </a>
-          <a href="../index.html" alt="Home">
-            <img src="./img/logo.svg" alt="Proffy" />
-          </a>
+          <img src="./img/logo.svg" alt="Proffy" />
         </div>
         <div class="header-content">
           <strong>Que incrível que você quer dar aulas.</strong>
           <p>O primeiro passo é preencher esse formulário de inscrição.</p>
         </div>
       </header>
-      <div class="form-container">
-        <form id="add-teacher">
-          <main>
-            <h2 class="form-section">Seus Dados</h2>
-            <div class="form-personal">
-              <div class="input-block">
-                <label for="teacher-name">Nome Completo</label>
-                <input type="text" name="teacher-name" id="teacher-name" />
-              </div>
-              <div class="input-block">
-                <label for="teacher-foto"
-                  >Link da sua foto <span>(comece com http://)</span></label
-                >
-                <input type="text" name="teacher-foto" id="teacher-foto" />
-              </div>
-              <div class="input-block">
-                <label for="teacher-whasapp"
-                  >Whatsapp <span>(somente números)</span></label
-                >
-                <input
-                  type="number"
-                  name="teacher-whasapp"
-                  id="teacher-whasapp"
-                />
-              </div>
-              <div class="input-block">
-                <label for="teacher-biography">Biografia</label>
-                <textarea
-                  type="text"
-                  name="teacher-biography"
-                  id="teacher-biography"
-                /></textarea>
-              </div>
+      <main>
+        <form action="" id="create-class">
+          <fieldset>
+            <legend>Seus Dados</legend>
+            <div class="input-block">
+              <label for="name">Nome Completo</label>
+              <input type="text" name="name" id="name" required/>
             </div>
-            <h2 class="form-section">Sobre a aula</h2>
-            <div class="form-class">
-              <div class="select-block">
-                <label for="subject">Matéria</label>
-                <select name="subject" id="subject">
-                  <option value="" disabled selected hidden>
-                    Selecione qual você quer ensinar
-                  </option>
-                  <option value="2">Artes</option>
-                  <option value="3">Biologia</option>
-                  <option value="4">Ciências</option>
-                  <option value="5">Educação física</option>
-                  <option value="6">Física</option>
-                  <option value="7">Geografia</option>
-                  <option value="8">História</option>
-                  <option value="9">Matemática</option>
-                  <option value="10">Português</option>
-                  <option value="11">Química</option>
-                </select>
-              </div>
-              <div class="input-block">
-                <label for="class-price"
-                  >Custo da hora aula <span>(em R$)</span></label
-                >
-                <input type="number" name="class-price" id="class-price" />
-              </div>
+            <div class="input-block">
+              <label for="avatar">Link da sua foto <small>(comece com http://)</small></label>
+              <input type="url" name="avatar" id="avatar" required/>
             </div>
-            <h2 class="form-section">Horários disponíveis</h2>
-            <div class="form-schedule">
-              <div class="action">
-                <span class="add-schedule">+ Novo Horário</span>
-              </div>
+            <div class="input-block">
+              <label for="whatsapp">Whatsapp <small>(somente números)</small></label>
+              <input type="number" name="whatsapp"id="whatsapp" required/>
+            </div>
+            <div class="textarea-block">
+              <label for="bio">Biografia</label>
+              <textarea ype="text" name="bio" id="bio"required /></textarea>
+          </fieldset>
+          <fieldset>
+            <legend>Sobre a aula</legend>
+            <div class="select-block">
+              <label for="subject">Matéria</label>
+              <select name="subject" id="subject">
+                <option value="" disabled selected hidden>
+                  Selecione uma opção
+                </option>
+                <option value="2">Artes</option>
+                <option value="3">Biologia</option>
+                <option value="4">Ciências</option>
+                <option value="5">Educação física</option>
+                <option value="6">Física</option>
+                <option value="7">Geografia</option>
+                <option value="8">História</option>
+                <option value="9">Matemática</option>
+                <option value="10">Português</option>
+                <option value="11">Química</option>
+              </select>
+            </div>
+            <div class="input-block">
+              <label for="cost">Custo da sua hora/aula <small>(em R$)</small></label>
+              <input type="number" name="cost" id="cost" required/>
+            </div>
+          </fieldset>
+          <fieldset id="schedule-items">
+            <legend>Horários disponíveis
+              <button id="add-time">+ Novo Horário</button>
+            </legend>
+            
+            <div class="schedule-item">
               <div class="select-block">
-                <label for="class-weekday">Dia da Semana</label>
-                <select name="class-weekday" id="class-weekday">
+                <label for="weekday">Dia da Semana</label>
+                <select name="weekday[]" id="weekday" required>
                   <option value="" disabled selected hidden>
-                    Selecione o dia
+                    Selecione uma opção
                   </option>
                   <option value="2">Domingo</option>
                   <option value="3">Segunda-feira</option>
@@ -108,39 +93,55 @@
                   <option value="8">Sábado</option>
                 </select>
               </div>
-              <div class="hours-input">
-                <div class="input-block">
-                  <label for="class-time-start">Das</label>
-                  <input
-                    type="time"
-                    name="class-time-start"
-                    id="class-time-start"
-                    min="0"
-                    max="24"
-                  />
-                </div>
-                <div class="input-block">
-                  <label for="class-time-end">Até</label>
-                  <input
-                    type="time"
-                    name="class-time-end"
-                    id="class-time-end"
-                    min="0"
-                    max="24"
-                  />
-                </div>
+              <div class="input-block">
+                <label for="time_from">Das</label>
+                <input type="time" name="time_from[]" min="0" max="24" />
+              </div>
+              <div class="input-block">
+                <label for="time_to">Até</label>
+                <input type="time" name="time_to[]" min="0" max="24" />
               </div>
             </div>
-          </main>
-          <footer>
-            <div class="warning">
-              <img src="./img/icons/warning.svg" alt="Aviso" />
-              <p>Importante!<br />Preencha todos os dados.</p>
+            
+            <div class="schedule-item">
+              <div class="select-block">
+                <label for="weekday">Dia da Semana</label>
+                <select name="weekday[]" id="weekday" required>
+                  <option value="" disabled selected hidden>
+                    Selecione uma opção
+                  </option>
+                  <option value="2">Domingo</option>
+                  <option value="3">Segunda-feira</option>
+                  <option value="4">Terça-feira</option>
+                  <option value="5">Quarta-feira</option>
+                  <option value="6">Quinta-feira</option>
+                  <option value="7">Sexta-feira</option>
+                  <option value="8">Sábado</option>
+                </select>
+              </div>
+              <div class="input-block">
+                <label for="time_from">Das</label>
+                <input type="time" name="time_from[]" min="0" max="24" />
+              </div>
+              <div class="input-block">
+                <label for="time_to">Até</label>
+                <input type="time" name="time_to[]" min="0" max="24" />
+              </div>
             </div>
-            <button type="submit">Salvar Cadastro</button>
-          </footer>
+
+          </fieldset>
         </form>
-      </div>
+
+        <footer>
+          <p>
+            <img src="./img/icons/warning.svg" alt="Aviso importante">
+            Importante! </br>
+            Preencha todos os dados
+          </p>
+          <button type="submit" form="create-class">Salvar cadastro</button>
+        </footer>
+        
+      </main>
     </div>
     <script src="./js/script.js"></script>
   </body>
