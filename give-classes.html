@@ -17,7 +17,7 @@
     <div id="container">
       <header class="page-header">
         <div class="top-bar-container">
-          <a href="/" alt="Voltar">
+          <a href="./index.html" alt="Voltar">
             <img src="./img/icons/back.svg" alt="Voltar" />
           </a>
           <img src="./img/logo.svg" alt="Proffy" />
@@ -29,7 +29,7 @@
       </header>
       <main>
         <form action="" id="create-class">
-          <fieldset>
+          <fieldset class="field-section">
             <legend>Seus Dados</legend>
             <div class="input-block">
               <label for="name">Nome Completo</label>
@@ -47,7 +47,7 @@
               <label for="bio">Biografia</label>
               <textarea type="text" name="bio" id="bio"required /></textarea>
           </fieldset>
-          <fieldset>
+          <fieldset class="field-section">
             <legend>Sobre a aula</legend>
             <div class="select-block">
               <label for="subject">Matéria</label>
@@ -73,9 +73,10 @@
             </div>
           </fieldset>
           <fieldset id="schedule-items">
-            <legend>Horários disponíveis
+            <div class="schedule-items-title">
+              <legend>Horários disponíveis</legend>
               <button id="add-time">+ Novo Horário</button>
-            </legend>
+            </div>
             
             <div class="schedule-item">
               <div class="select-block">
