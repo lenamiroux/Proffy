@@ -108,16 +108,6 @@
   bottom: 0;
 }
 
-.select-block:focus-within::after {
-  content: '';
-  width: calc(100% - 3.2rem);
-  height: 2px;
-  background: var(--color-primary-light);
-  position: absolute;
-  left: 1.6rem;
-  bottom: 0;
-}
-
 #page-study main {
   margin: 3.2rem auto;
   width: 90%;
