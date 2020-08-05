@@ -102,32 +102,6 @@
                 <input type="time" name="time_to[]" min="0" max="24" />
               </div>
             </div>
-            
-            <div class="schedule-item">
-              <div class="select-block">
-                <label for="weekday">Dia da Semana</label>
-                <select name="weekday[]" id="weekday" required>
-                  <option value="" disabled selected hidden>
-                    Selecione uma opção
-                  </option>
-                  <option value="2">Domingo</option>
-                  <option value="3">Segunda-feira</option>
-                  <option value="4">Terça-feira</option>
-                  <option value="5">Quarta-feira</option>
-                  <option value="6">Quinta-feira</option>
-                  <option value="7">Sexta-feira</option>
-                  <option value="8">Sábado</option>
-                </select>
-              </div>
-              <div class="input-block">
-                <label for="time_from">Das</label>
-                <input type="time" name="time_from[]" min="0" max="24" />
-              </div>
-              <div class="input-block">
-                <label for="time_to">Até</label>
-                <input type="time" name="time_to[]" min="0" max="24" />
-              </div>
-            </div>
 
           </fieldset>
         </form>
@@ -143,6 +117,7 @@
         
       </main>
     </div>
-    <script src="./js/script.js"></script>
+    <script defer src="./scripts/addField.js"></script>
+    <script defer src="./scripts/main.js"></script>
   </body>
 </html>
