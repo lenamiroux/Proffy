@@ -1,31 +1,147 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="stylesheet" href="./styles/reset.css" />
+    <link rel="stylesheet" href="./styles/colors.css" />
+    <link rel="stylesheet" href="./styles/fonts.css" />
+    <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="stylesheet" href="./styles/partials/page-teach.css" />
+
+    <title>Proffy | Sua plataforma de estudos online</title>
   </head>
-  <body>
-    <div class="main">
-      <div class="header"></div>
-      <div class="form">
-        <div class="personal_data">
-          <h2 class="form_section">Seus dados</h2>
-          <input type="text" label="name" />
-          <input type="text" label="url_avatar" />
-          <input type="phone" label="whatsapp" />
-          <input type="textarea" label="biography" />
+  <body id="page-teach">
+    <div id="container">
+      <header class="page-header">
+        <div class="top-bar-container">
+          <a href="/">
+            <img src="./img/icons/back.svg" alt="Voltar" />
+          </a>
+          <a href="../index.html" alt="Home">
+            <img src="./img/logo.svg" alt="Proffy" />
+          </a>
         </div>
-        <div class="class_data">
-          <h2 class="form_section">Sobre a aula</h2>
-          <input type="text" label="subject" />
-          <input type="text" label="price_hour" />
+        <div class="header-content">
+          <strong>Que incrível que você quer dar aulas.</strong>
+          <p>O primeiro passo é preencher esse formulário de inscrição.</p>
         </div>
-        <div class="class_schedule">
-          <h2 class="form_section">Horários disponíveis</h2>
-          <input type="dropdown" label="week_day" />
-        </div>
+      </header>
+      <div class="form-container">
+        <form id="add-teacher">
+          <main>
+            <h2 class="form-section">Seus Dados</h2>
+            <div class="form-personal">
+              <div class="input-block">
+                <label for="teacher-name">Nome Completo</label>
+                <input type="text" name="teacher-name" id="teacher-name" />
+              </div>
+              <div class="input-block">
+                <label for="teacher-foto"
+                  >Link da sua foto <span>(comece com http://)</span></label
+                >
+                <input type="text" name="teacher-foto" id="teacher-foto" />
+              </div>
+              <div class="input-block">
+                <label for="teacher-whasapp"
+                  >Whatsapp <span>(somente números)</span></label
+                >
+                <input
+                  type="number"
+                  name="teacher-whasapp"
+                  id="teacher-whasapp"
+                />
+              </div>
+              <div class="input-block">
+                <label for="teacher-biography">Biografia</label>
+                <input
+                  type="textarea"
+                  name="teacher-biography"
+                  id="teacher-biography"
+                />
+              </div>
+            </div>
+            <h2 class="form-section">Sobre a aula</h2>
+            <div class="form-class">
+              <div class="select-block">
+                <label for="subject">Matéria</label>
+                <select name="subject" id="subject">
+                  <option value="" disabled selected hidden>
+                    Selecione qual você quer ensinar
+                  </option>
+                  <option value="2">Artes</option>
+                  <option value="3">Biologia</option>
+                  <option value="4">Ciências</option>
+                  <option value="5">Educação física</option>
+                  <option value="6">Física</option>
+                  <option value="7">Geografia</option>
+                  <option value="8">História</option>
+                  <option value="9">Matemática</option>
+                  <option value="10">Português</option>
+                  <option value="11">Química</option>
+                </select>
+              </div>
+              <div class="input-block">
+                <label for="class-price"
+                  >Custo da hora aula <span>(em R$)</span></label
+                >
+                <input type="number" name="class-price" id="class-price" />
+              </div>
+            </div>
+            <h2 class="form-section">Horários disponíveis</h2>
+            <div class="form-schedule">
+              <div class="action">
+                <span class="add-schedule">+ Novo Horário</span>
+              </div>
+              <div class="select-block">
+                <label for="class-weekday">Dia da Semana</label>
+                <select name="class-weekday" id="class-weekday">
+                  <option value="" disabled selected hidden>
+                    Selecione o dia
+                  </option>
+                  <option value="2">Domingo</option>
+                  <option value="3">Segunda-feira</option>
+                  <option value="4">Terça-feira</option>
+                  <option value="5">Quarta-feira</option>
+                  <option value="6">Quinta-feira</option>
+                  <option value="7">Sexta-feira</option>
+                  <option value="8">Sábado</option>
+                </select>
+              </div>
+              <div class="hours-input">
+                <div class="input-block">
+                  <label for="class-time-start">Das</label>
+                  <input
+                    type="time"
+                    name="class-time-start"
+                    id="class-time-start"
+                    min="0"
+                    max="24"
+                  />
+                </div>
+                <div class="input-block">
+                  <label for="class-time-end">Até</label>
+                  <input
+                    type="time"
+                    name="class-time-end"
+                    id="class-time-end"
+                    min="0"
+                    max="24"
+                  />
+                </div>
+              </div>
+            </div>
+          </main>
+          <footer>
+            <div class="warning">
+              <img src="./img/icons/warning.svg" alt="Aviso" />
+              <p>Importante!<br />Preencha todos os dados.</p>
+            </div>
+            <button type="submit">Salvar Cadastro</button>
+          </footer>
+        </form>
       </div>
     </div>
+    <script src="./js/script.js"></script>
   </body>
 </html>
