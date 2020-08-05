@@ -4,3 +4,15 @@
   /* tamamho da fonte padrão: 16px - 100% - 1rem */
   font-size: 60%; /* controle das medidas rem */
 }
+
+@media (max-width: 669px) {
+  :root {
+    font-size: 40%; /* modifica medidas em rem */
+  }
+}
+
+@media (min-width: 700px) {
+  :root {
+    font-size: 62.5%;
+  }
+}
