@@ -82,7 +82,7 @@
               <div class="select-block">
                 <label for="weekday">Dia da Semana</label>
                 <select name="weekday[]" id="weekday" required>
-                  <option value="" disabled selected hidden>
+                  <option class="disabled" value="" disabled="disabled" selected hidden>
                     Selecione uma opção
                   </option>
                   <option value="2">Domingo</option>
@@ -118,6 +118,8 @@
         
       </main>
     </div>
+
+    <script defer src="./scripts/customSelect.js"></script>
     <script defer src="./scripts/addField.js"></script>
     <script defer src="./scripts/main.js"></script>
   </body>
