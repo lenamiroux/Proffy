@@ -1,0 +1,27 @@
+{
+  "name": "Proffy",
+  "version": "1.0.0",
+  "description": "<h1 align=\"center\">Proffy</h1> <p>   <img alt=\"Version\" src=\"https://img.shields.io/badge/version-1.0-blue.svg?cacheSeconds=2592000\" />   <a href=\"#\" target=\"_blank\">     <img alt=\"License: MIT\" src=\"https://img.shields.io/badge/License-MIT-yellow.svg\" />   </a>   <a href=\"https://twitter.com/lenamiroux\" target=\"_blank\">     <img alt=\"Twitter: lenamiroux\" src=\"https://img.shields.io/twitter/follow/lenamiroux.svg?style=social\" />   </a> </p>",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon src/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lenamiroux/Proffy.git"
+  },
+  "keywords": [],
+  "author": "Helena Neves",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lenamiroux/Proffy/issues"
+  },
+  "homepage": "https://github.com/lenamiroux/Proffy#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nunjucks": "^3.2.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}

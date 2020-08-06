@@ -17,7 +17,7 @@
     <div id="container">
       <header class="page-header">
         <div class="top-bar-container">
-          <a href="./index.html" alt="Voltar">
+          <a href="/" alt="Voltar">
             <img src="./img/icons/back.svg" alt="Voltar" />
           </a>
           <img src="./img/logo.svg" alt="Proffy" />
@@ -55,16 +55,13 @@
                 <option value="" disabled selected hidden>
                   Selecione uma opção
                 </option>
-                <option value="2">Artes</option>
-                <option value="3">Biologia</option>
-                <option value="4">Ciências</option>
-                <option value="5">Educação física</option>
-                <option value="6">Física</option>
-                <option value="7">Geografia</option>
-                <option value="8">História</option>
-                <option value="9">Matemática</option>
-                <option value="10">Português</option>
-                <option value="11">Química</option>
+
+                {%for subject in subjects%} 
+                  <option value="{{loop.index}}" {{ "selected" if filters.subject == loop.index}}>
+                    {{subject}}
+                  </option>
+                {%endfor%}
+
               </select>
             </div>
             <div class="input-block">
@@ -82,16 +79,16 @@
               <div class="select-block">
                 <label for="weekday">Dia da Semana</label>
                 <select name="weekday[]" id="weekday" required>
-                  <option class="disabled" value="" disabled="disabled" selected hidden>
+                  <option value="" disabled selected hidden>
                     Selecione uma opção
                   </option>
-                  <option value="2">Domingo</option>
-                  <option value="3">Segunda-feira</option>
-                  <option value="4">Terça-feira</option>
-                  <option value="5">Quarta-feira</option>
-                  <option value="6">Quinta-feira</option>
-                  <option value="7">Sexta-feira</option>
-                  <option value="8">Sábado</option>
+
+                  {%for weekday in weekdays%} 
+                    <option value="{{loop.index}}">
+                      {{weekday}}
+                    </option>
+                  {%endfor%}
+
                 </select>
               </div>
               <div class="input-block">

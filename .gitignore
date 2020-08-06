@@ -12,3 +12,6 @@
 
 # Modules
 node_modules/
+
+# Test Files
+welcome.njk

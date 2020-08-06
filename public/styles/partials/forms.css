@@ -46,28 +46,6 @@
   bottom: 0.7rem;
 }
 
-footer button {
-  height: 5.6rem;
-  background: var(--color-secondary);
-  color: var(--color-button-text);
-  border: 0;
-  border-radius: 0.8rem;
-  cursor: pointer;
-  font: 700 1.4rem Archivo;
-
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-
-  text-decoration: none;
-
-  transition: background 0.2s;
-}
-
-footer button:hover {
-  background: var(--color-secondary-dark);
-}
-
 /* The container must be positioned relative: */
 .select-block {
   position: relative;
@@ -89,6 +67,10 @@ footer button:hover {
   margin-top: 0.8rem;
 }
 
+.select-selected div:hover {
+  margin-bottom: 1px solid var(--color-primary-light);
+}
+
 /* Style the arrow inside the select element: */
 .select-selected:after {
   position: absolute;
@@ -104,10 +86,6 @@ footer button:hover {
   color: var(--color-text-base);
   font-size: 2rem;
   line-height: 0;
-}
-
-option:disabled {
-  color: var(--color-small-info);
 }
 
 /* Point the arrow upwards when the select box is open (active): */
