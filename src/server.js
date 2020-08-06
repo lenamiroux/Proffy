@@ -50,7 +50,7 @@ const weekdays = [
 ];
 
 // Funcionalidades
-function getSubjects() {
+function getSubject() {
   const index = +subjectNumber - 1;
   return subjects[index];
 }
@@ -64,10 +64,9 @@ function pageStudy(req, res) {
 }
 function pageGiveClasses(req, res) {
   const data = req.query;
-  console.log(proffys);
   const isNotEmpty = Object.keys(data).length > 0;
   if (isNotEmpty) {
-    data.subject;
+    data.subject = getSubject(data.subject);
     proffys.push(data);
     return res.redirect('/study');
   }
