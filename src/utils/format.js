@@ -27,8 +27,14 @@ function getSubject(subjectNumber) {
   return subjects[index];
 }
 
+function convertHoursToMinutes(time) {
+  const [hours, minutes] = time.split(':');
+  return Number(hours * 60 + minutes);
+}
+
 module.exports = {
   subjects,
   weekdays,
   getSubject,
+  convertHoursToMinutes,
 };

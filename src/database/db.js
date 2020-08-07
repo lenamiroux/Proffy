@@ -1,4 +1,5 @@
 const Database = require('sqlite-async');
+module.exports = Database.open(__dirname + '/database.sqlite').then(execute);
 
 function execute(db) {
   // Criando tabelas do banco de dados
@@ -27,5 +28,3 @@ function execute(db) {
     );
   `);
 }
-
-module.exports = Database.open(__dirname + '/database.sqlite').then(execute);

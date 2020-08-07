@@ -38,7 +38,7 @@ Database.then(async (db) => {
 
   // Consultar os dados inseridos
   //todos os proffys
-  const selectedProffys = await db.all('SELECT * FROM proffys');
+  // const selectedProffys = await db.all('SELECT * FROM proffys');
   // //console.log(selectedProffys);
 
   // // consultar classes de um determinado professor
@@ -62,5 +62,5 @@ Database.then(async (db) => {
     AND class_schedules.time_from <= "600"
     AND class_schedules.time_to > "660"
   `);
-  console.log(selectClassesSchedules);
+  // console.log(selectClassesSchedules);
 });
