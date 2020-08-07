@@ -12,7 +12,7 @@
 > Web Platform to connect students and teachers.
 
 ## 🏷 About 
-Project developed between August 3rd and 9th of 2020 as result of the Discovery trail inside the Next Level Week #2. The [NLW](https://nextlevelweek.com/) is an event promoted by [@Rocketseat](https://github.com/Rocketseat) that gathers a community of developers with a goal of improving their skills together.
+Project developed in August 2020 as result of the Discovery trail inside the Next Level Week #2. The [NLW](https://nextlevelweek.com/) is an event promoted by [@Rocketseat](https://github.com/Rocketseat) that gathers a community of developers with a goal of improving their skills together.
 
 ## 👤 Author
 
