@@ -12,7 +12,7 @@
 > Web Platform to connect students and teachers.
 
 ## 🏷 About 
-Project developed in August 2020 as result of the Discovery trail inside the Next Level Week #2. The [NLW](https://nextlevelweek.com/) is an event promoted by [@Rocketseat](https://github.com/Rocketseat) that gathers a community of developers with a goal of improving their skills together.
+Project developed in August of 2020 as result of the Discovery trail inside the Next Level Week #2. The [NLW](https://nextlevelweek.com/) is an event promoted by [@Rocketseat](https://github.com/Rocketseat) that gathers a community of developers with a goal of improving their skills together.
 
 ## 👤 Author
 
@@ -32,22 +32,25 @@ Project developed in August 2020 as result of the Discovery trail inside the Nex
 - SQLite
 
 ## 🖥 How to run
-#### Clone
+#### 1.Clone
 git clone https://github.com/lenamiroux/Proffy
 
-#### Find directory
+#### 2. Find directory
 cd Proffy
 
-#### Download dependecies
+#### 3. Download dependecies
 npm i
 
-#### Run server
+#### 4. Run server
 npm run dev
 
-#### Open on browser
+#### 5. Open on browser
 Open the following address on your browser http://localhost:5500/
 
-## Show your support
+## 🐞 Bugs and Issues
+Feel free to contact me if you found bugs or have ideias to improvement. I would love to hear your insights. Checkout the project [Issues](https://github.com/lenamiroux/Proffy/issues).
+
+## 🥰 Show your support
 
 Give a ⭐️ if this project helped you!
 
