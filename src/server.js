@@ -50,7 +50,7 @@ const weekdays = [
 ];
 
 // Funcionalidades
-function getSubject() {
+function getSubject(subjectNumber) {
   const index = +subjectNumber - 1;
   return subjects[index];
 }
