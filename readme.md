@@ -20,6 +20,10 @@ Project developed in August of 2020 as result of the Discovery trail inside the 
 - LinkedIn: [@lenamiroux](https://linkedin.com/in/lenamiroux)
 - Rocketseat: [@lenamiroux](https://app.rocketseat.com.br/me/)
 
+## 🖥 Preview
+
+[Proffy Web](https://lenamiroux.github.io/Proffy/index.html)
+
 ## 🧰 Technologies
 - HTML 5
 - CSS 3
@@ -28,7 +32,7 @@ Project developed in August of 2020 as result of the Discovery trail inside the 
 - Nunjucks
 - SQLite
 
-## 🖥 How to run
+## 💻 How to run
 #### 1.Clone
   git clone https://github.com/lenamiroux/Proffy
 
