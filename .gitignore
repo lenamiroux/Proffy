@@ -13,4 +13,6 @@
 # Modules
 node_modules/
 
-/src
+# Test Files
+welcome.njk
+fake_data.js
