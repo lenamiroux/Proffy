@@ -4,9 +4,6 @@
   <a href="#" target="_blank">
     <img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-yellow.svg" />
   </a>
-  <a href="https://twitter.com/lenamiroux" target="_blank">
-    <img alt="Twitter: lenamiroux" src="https://img.shields.io/twitter/follow/lenamiroux.svg?style=social" />
-  </a>
 </p>
 
 > Web Platform to connect students and teachers.
