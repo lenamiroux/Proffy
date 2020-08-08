@@ -12,3 +12,5 @@
 
 # Modules
 node_modules/
+
+/src
