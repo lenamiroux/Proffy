@@ -33,19 +33,19 @@ Project developed in August of 2020 as result of the Discovery trail inside the 
 
 ## 🖥 How to run
 #### 1.Clone
-git clone https://github.com/lenamiroux/Proffy
+  git clone https://github.com/lenamiroux/Proffy
 
 #### 2. Find directory
-cd Proffy
+  cd Proffy
 
 #### 3. Download dependecies
-npm i
+  npm i
 
 #### 4. Run server
-npm run dev
+  npm run dev
 
 #### 5. Open on browser
-Open the following address on your browser http://localhost:5500/
+  Open the following address on your browser http://localhost:5500/
 
 ## 🐞 Bugs and Issues
 Feel free to contact me if you found bugs or have ideias to improvement. I would love to hear your insights. Checkout the project [Issues](https://github.com/lenamiroux/Proffy/issues).
