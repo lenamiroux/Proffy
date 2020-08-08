@@ -73,6 +73,19 @@
   margin-top: 2.4rem;
 }
 
+.field-split {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2.4rem;
+}
+
+.field-split > .input-block:first-child {
+  margin-right: 3rem;
+  margin-top: 2.4rem;
+}
+
 #page-give-classes footer {
   padding: 4rem 2.4rem;
   background: var(--color-box-footer);
