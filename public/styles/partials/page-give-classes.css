@@ -69,21 +69,15 @@
 
 #page-give-classes .input-block + .input-block,
 #page-give-classes .input-block + .textarea-block,
-#page-give-classes .select-block + .input-block {
+#page-give-classes .select-block + .input-block,
+#page-give-classes .field-split + .textarea-block,
+#page-give-classes .input-block + .field-split {
   margin-top: 2.4rem;
-}
-
-.field-split {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 2.4rem;
 }
 
 .field-split > .input-block:first-child {
-  margin-right: 3rem;
-  margin-top: 2.4rem;
+  margin-right: 0;
+  margin-top: 0;
 }
 
 #page-give-classes footer {
@@ -169,5 +163,20 @@
   #page-give-classes main footer button {
     margin-top: 0;
     width: 200px;
+  }
+
+  .field-split {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .field-split > .input-block:first-child {
+    margin-right: 3rem;
+  }
+
+  #page-give-classes .input-block + .input-block {
+    margin-top: 0;
   }
 }
