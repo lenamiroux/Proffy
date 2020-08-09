@@ -4,10 +4,10 @@ const server = express();
 
 const {
   pageLanding,
-  pageSuccess,
   pageStudy,
   pageGiveClasses,
   saveClasses,
+  pageSuccess,
 } = require('./pages');
 
 // Template Engine
@@ -25,8 +25,8 @@ server
   .use(express.static('public'))
   //rotas da aplicação
   .get('/', pageLanding)
-  .get('/success', pageSuccess)
   .get('/study', pageStudy)
   .get('/give-classes', pageGiveClasses)
   .post('/save-classes', saveClasses)
+  .get('/page-success', pageSuccess)
   .listen(5500);

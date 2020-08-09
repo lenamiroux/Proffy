@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="./styles/main.css" />
     <link rel="stylesheet" href="./styles/partials/page-success.css" />
   </head>
+
   <body id="page-success">
     <div id="container">
       <img
@@ -29,6 +30,13 @@
         <a href="./give-classes.html" class="go-to-list">Acessar Lista</a>
       </button>
     </div>
+
+    <script>
+      setTimeout(function () {
+        // after 2 seconds
+        window.location = `/study?subject={{subject}}&weekday={{weekday}}&time={{time}}`;
+      }, 2000);
+    </script>
     <script src="./scripts/main.js"></script>
   </body>
 </html>
