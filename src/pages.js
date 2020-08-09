@@ -14,6 +14,11 @@ function pageLanding(req, res) {
   return res.render('index.html');
 }
 
+// Success Page
+function pageSuccess(req, res) {
+  return res.render('page-success.html');
+}
+
 // Page Study
 async function pageStudy(req, res) {
   const filters = req.query;
@@ -101,6 +106,7 @@ async function saveClasses(req, res) {
 
 module.exports = {
   pageLanding,
+  pageSuccess,
   pageStudy,
   pageGiveClasses,
   saveClasses,
