@@ -40,7 +40,7 @@ Project developed in August of 2020 as result of the Discovery trail inside the 
 > cd Proffy
 
 #### 3. Download dependecies
->  npm i
+>  npm install
 
 #### 4. Run server
 >  npm run dev
