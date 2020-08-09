@@ -38,11 +38,11 @@
             <div class="field-split">
               <div class="input-block">
                 <label for="avatar">Link da sua foto <small>(comece com http://)</small></label>
-                <input type="url" name="avatar" id="avatar" required/>
+                <input type="url" name="avatar" id="avatar" pattern="^(?:http(s)?:\/\/)?[\w.-]+(?:\.[\w\.-]+)+[\w\-\._~:/?#[\]@!\$&'\(\)\*\+,;=.]+$" required/>
               </div>
               <div class="input-block">
                 <label for="whatsapp">Whatsapp <small>(somente números)</small></label>
-                <input type="tel" name="whatsapp" id="whatsapp" placeholder="(__) ____-____" maxlength="15" pattern="\([0-9]{2}\) [0-9]{4,6}-[0-9]{3,4}$"required/>
+                <input type="tel" name="whatsapp" id="whatsapp" placeholder="(__) ____-____" minlength="13" maxlength="15" pattern="\([0-9]{2}\) [0-9]{4,6}-[0-9]{3,4}$"required/>
               </div>
             </div>
             <div class="textarea-block">
@@ -68,7 +68,7 @@
             </div>
             <div class="input-block">
               <label for="cost">Custo da sua hora/aula <small>(em R$)</small></label>
-              <input type="number" name="cost" id="cost" required/>
+              <input type="number" name="cost" id="cost" minlength="4" pattern="[0-9]{2,},[0-9]{2}$" required/>
             </div>
           </fieldset>
           <fieldset id="schedule-items">
