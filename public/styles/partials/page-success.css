@@ -1,0 +1,98 @@
+#page-success {
+  background-color: var(--color-primary-darker);
+  height: 100vh;
+  width: 100vw;
+}
+
+#page-success #container {
+  height: 80vh;
+  width: 90vh;
+  max-width: 1100px;
+
+  background-image: url('../../img/success-background.svg');
+  background-repeat: no-repeat;
+  background-position: center center;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#page-success .success-elements {
+  margin-bottom: 3.4rem;
+}
+
+#page-success h1 {
+  color: var(--color-title-in-primary);
+  font: 700 6rem Archivo;
+  margin-top: 3rem;
+}
+
+#page-success p {
+  color: var(--color-text-in-primary);
+  font: 400 2.6rem Poppins;
+  line-height: 3rem;
+  width: 80%;
+  text-align: center;
+}
+
+#page-success a {
+  color: var(--color-button-text);
+  text-decoration: none;
+  font: 700 2.4rem Archivo;
+  text-align: center;
+}
+
+#page-success button {
+  width: 90%;
+  height: 5.6rem;
+  background: var(--color-secondary);
+  border: 0;
+  border-radius: 0.8rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s;
+  margin-top: 3.2rem;
+}
+
+#page-success button:hover {
+  background-color: var(--color-secondary-dark);
+}
+
+#hero-image {
+  position: absolute;
+  width: 100%;
+  z-index: -99;
+}
+
+@media (min-width: 700px) {
+  #page-success #container {
+    max-width: 1100px;
+  }
+
+  #page-success h1 {
+    font-size: 54px;
+  }
+
+  #page-success p {
+    font-size: 16px;
+    line-height: 24px;
+    max-width: 500px;
+  }
+
+  #page-success a {
+    font-size: 16px;
+    font-weight: 400;
+  }
+
+  #page-success button {
+    width: 200px;
+  }
+
+  #hero-image {
+    width: 90%;
+  }
+}
