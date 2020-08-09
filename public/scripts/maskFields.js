@@ -14,6 +14,7 @@ function formatValueTel(typedKey) {
   formatedValue = formatedValue.replace(/^(\d{2})(\d)/g, '($1) $2');
   // Coloca hífen entre o quarto e o quinto dígitos
   formatedValue = formatedValue.replace(/(\d)(\d{4})$/, '$1-$2');
+
   return formatedValue;
 }
 
@@ -23,7 +24,7 @@ function formatValueTime(typedKey) {
   // Remove tudo o que não é dígito
   formatedValue = formatedValue.replace(/\D/g, '');
   // Coloca dois pontos entre o segundo e o terceiro dígitos
-  formatedValue = formatedValue.replace(/(\d)(\d{2})$/, '$1:$2');
+  formatedValue = formatedValue.replace(/(\d)(\d{2})$/g, '$1:$2');
 
   return formatedValue;
 }
@@ -33,8 +34,8 @@ function formatValueCurrency(typedKey) {
 
   // Remove tudo o que não é dígito
   formatedValue = formatedValue.replace(/\D/g, '');
-  // Coloca vírgula antes dos dois últimos dígitos
-  formatedValue = formatedValue.replace(/(\d){2,}(\d{2})$/, '$1,$2');
+  // Coloca dois pontos entre o segundo e o terceiro dígitos
+  formatedValue = formatedValue.replace(/(\d)(\d{2})$/g, '$1,$2');
 
   return formatedValue;
 }
@@ -49,6 +50,10 @@ window.onload = function () {
   };
 
   document.getElementById('time_to[]').onkeyup = function () {
+    applyMask(this, formatValueTime);
+  };
+
+  document.getElementById('time').onkeyup = function () {
     applyMask(this, formatValueTime);
   };
 
